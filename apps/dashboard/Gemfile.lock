@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/nesi/ood_core.git
+  revision: d88d640934b5a8aaf10a8e23ef2e145968c1f513
+  branch: k8-dot-unames
+  specs:
+    ood_core (0.26.1)
+      ffi (~> 1.16.3)
+      ood_support (~> 0.0.2)
+      rexml (~> 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -60,8 +70,8 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
-    addressable (2.8.6)
-      public_suffix (>= 2.0.2, < 6.0)
+    addressable (2.8.7)
+      public_suffix (>= 2.0.2, < 7.0)
     autoprefixer-rails (10.2.5.1)
       execjs (> 0)
     base64 (0.2.0)
@@ -69,13 +79,13 @@ GEM
       actionpack (>= 5.2)
       activemodel (>= 5.2)
     browser (2.7.1)
-    builder (3.2.4)
+    builder (3.3.0)
     byebug (11.1.3)
-    capybara (3.39.2)
+    capybara (3.40.0)
       addressable
       matrix
       mini_mime (>= 0.1.3)
-      nokogiri (~> 1.8)
+      nokogiri (~> 1.11)
       rack (>= 1.6.0)
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
@@ -89,13 +99,12 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.2.3)
+    concurrent-ruby (1.3.4)
     crass (1.0.6)
-    cssbundling-rails (1.4.0)
+    cssbundling-rails (1.4.1)
       railties (>= 6.0.0)
-    dalli (3.2.7)
-      base64
-    date (3.3.4)
+    dalli (3.2.8)
+    date (3.4.1)
     domain_name (0.6.20240107)
     dotenv (2.8.1)
     dotenv-rails (2.8.1)
@@ -104,29 +113,30 @@ GEM
     dotiw (5.3.3)
       activesupport
       i18n
-    erubi (1.12.0)
-    execjs (2.9.1)
+    erubi (1.13.0)
+    execjs (2.10.0)
     ffi (1.16.3)
     globalid (1.2.1)
       activesupport (>= 6.1)
     http-accept (1.7.0)
-    http-cookie (1.0.5)
+    http-cookie (1.0.8)
       domain_name (~> 0.5)
-    i18n (1.14.1)
+    i18n (1.14.6)
       concurrent-ruby (~> 1.0)
-    jbuilder (2.11.5)
+    jbuilder (2.13.0)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    jsbundling-rails (1.3.0)
+    jsbundling-rails (1.3.1)
       railties (>= 6.0.0)
     local_time (1.0.3)
       coffee-rails
+    logger (1.6.2)
     lograge (0.14.0)
       actionpack (>= 4)
       activesupport (>= 4)
       railties (>= 4)
       request_store (~> 1.0)
-    loofah (2.22.0)
+    loofah (2.23.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     mail (2.8.1)
@@ -134,52 +144,58 @@ GEM
       net-imap
       net-pop
       net-smtp
-    marcel (1.0.2)
+    marcel (1.0.4)
     matrix (0.4.2)
-    method_source (1.0.0)
-    mime-types (3.5.2)
+    method_source (1.1.0)
+    mime-types (3.6.0)
+      logger
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2023.1205)
+    mime-types-data (3.2024.1203)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.5)
-    minitest (5.21.2)
-    mocha (2.1.0)
+    minitest (5.25.4)
+    mocha (2.7.1)
       ruby2_keywords (>= 0.0.5)
     multi_json (1.15.0)
-    mustermann (3.0.0)
+    mustermann (3.0.3)
       ruby2_keywords (~> 0.0.1)
-    net-imap (0.3.7)
+    net-imap (0.5.1)
       date
       net-protocol
     net-pop (0.1.2)
       net-protocol
     net-protocol (0.2.2)
       timeout
-    net-smtp (0.4.0.1)
+    net-smtp (0.5.0)
       net-protocol
     netrc (0.11.0)
-    nio4r (2.7.0)
-    nokogiri (1.15.5)
-      mini_portile2 (~> 2.8.2)
+    nio4r (2.7.4)
+    nokogiri (1.17.0-aarch64-linux)
       racc (~> 1.4)
-    ood_appkit (2.1.1)
+    nokogiri (1.17.0-arm-linux)
+      racc (~> 1.4)
+    nokogiri (1.17.0-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.17.0-x86-linux)
+      racc (~> 1.4)
+    nokogiri (1.17.0-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.17.0-x86_64-linux)
+      racc (~> 1.4)
+    ood_appkit (2.1.4)
       addressable (~> 2.4)
       lograge (~> 0.3)
       ood_core (~> 0.1)
-      rails (>= 6.0.0, < 7)
+      rails (>= 6.0.0)
       redcarpet (~> 3.2)
-    ood_core (0.25.0)
-      ffi (~> 1.9, >= 1.9.6)
-      ood_support (~> 0.0.2)
-      rexml (~> 3.2)
     ood_support (0.0.5)
     pbs (2.2.1)
       ffi (~> 1.9, >= 1.9.6)
-    psych (5.1.2)
+    psych (5.2.1)
+      date
       stringio
-    public_suffix (5.0.4)
-    racc (1.7.3)
-    rack (2.2.8)
+    public_suffix (6.0.1)
+    racc (1.8.1)
+    rack (2.2.10)
     rack-protection (3.2.0)
       base64 (>= 0.1.0)
       rack (~> 2.2, >= 2.2.4)
@@ -204,29 +220,29 @@ GEM
       activesupport (>= 5.0.0)
       minitest
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.6.0)
+    rails-html-sanitizer (1.6.1)
       loofah (~> 2.21)
-      nokogiri (~> 1.14)
+      nokogiri (>= 1.15.7, != 1.16.7, != 1.16.6, != 1.16.5, != 1.16.4, != 1.16.3, != 1.16.2, != 1.16.1, != 1.16.0.rc1, != 1.16.0)
     railties (6.1.7.6)
       actionpack (= 6.1.7.6)
       activesupport (= 6.1.7.6)
       method_source
       rake (>= 12.2)
       thor (~> 1.0)
-    rake (13.1.0)
-    rdoc (6.6.3.1)
+    rake (13.2.1)
+    rdoc (6.8.1)
       psych (>= 4.0.0)
     redcarpet (3.6.0)
-    regexp_parser (2.9.0)
-    request_store (1.5.1)
+    regexp_parser (2.9.3)
+    request_store (1.7.0)
       rack (>= 1.4)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    rexml (3.2.6)
-    rss (0.3.0)
+    rexml (3.3.9)
+    rss (0.3.1)
       rexml
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
@@ -251,29 +267,34 @@ GEM
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
-    sprockets-rails (3.4.2)
-      actionpack (>= 5.2)
-      activesupport (>= 5.2)
+    sprockets-rails (3.5.2)
+      actionpack (>= 6.1)
+      activesupport (>= 6.1)
       sprockets (>= 3.0.0)
-    stringio (3.1.0)
-    thor (1.3.0)
-    tilt (2.3.0)
-    timecop (0.9.8)
-    timeout (0.4.1)
+    stringio (3.1.2)
+    thor (1.3.2)
+    tilt (2.4.0)
+    timecop (0.9.10)
+    timeout (0.4.2)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    webrick (1.8.1)
-    websocket (1.2.10)
+    webrick (1.9.1)
+    websocket (1.2.11)
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.12)
-    zip_kit (6.2.2)
+    zeitwerk (2.7.1)
+    zip_kit (6.3.1)
 
 PLATFORMS
-  ruby
+  aarch64-linux
+  arm-linux
+  arm64-darwin
+  x86-linux
+  x86_64-darwin
+  x86_64-linux
 
 DEPENDENCIES
   addressable (~> 2.4)
@@ -293,7 +314,7 @@ DEPENDENCIES
   local_time (~> 1.0.3)
   mocha (~> 2.1)
   ood_appkit (~> 2.1.0)
-  ood_core (~> 0.25)
+  ood_core!
   ood_support (~> 0.0.2)
   pbs (~> 2.2.1)
   rails (= 6.1.7.6)
@@ -309,4 +330,4 @@ DEPENDENCIES
   zip_kit (~> 6.2)
 
 BUNDLED WITH
-   2.3.6
+   2.5.16
